@@ -1,2 +1,2 @@
 # walsted
-john walsted's icons, for jerry
+john walsted's icons
