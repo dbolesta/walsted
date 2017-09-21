@@ -6,24 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+      
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
       
       
-    <style>
+      
+      <style>
         
         body { background-color: #1C1C1C !important;}
       
         h1, h3, p {color:#F4EED3 !important;}
+          
+          h1, h3 { font-family: "Alegreya";}
+          
+          #image-gal .icon-title {margin-bottom: 1rem; }
+          
+          h3 span {font-style: italic;}
+          
+          p { font-family: "Work Sans";}
         
         .icon-card-img-container {
             margin-bottom: 15px;
         }
         
-        .icon-card-img-container img {width: 100%;}
+        .icon-card-img-container img {
+            width: 100%;
+            
+            -webkit-transition: all 100ms ease 0s;
+            -moz-transition: all 100ms ease 0s;
+            -ms-transition: all 100ms ease 0s;
+            -o-transition: all 100ms ease 0s;
+            transition: all 100ms ease 0s;
+        }
+          
+          .icon-card-img-container img:hover {
+              transform: scale(1.01);
+          }
         
+          .icon-card-text-container p:nth-of-type(1) {
+                font-style: italic;
+            }
         
         .icon-card {
             text-align: center;
-            border: 1px solid #F4EED3;
+            /* border: 1px solid #F4EED3; */
             margin: auto;
             margin-bottom: 25px;
             width: 100%;
@@ -35,141 +67,108 @@
             max-width: 400px;
         }
         
-        
-        // Small devices (landscape phones, 576px and up)
-        @media (min-width: 576px) {
-            
-        }
-
-        // Medium devices (tablets, 768px and up)
-        @media (min-width: 768px) {
-        
-        }
-
-        // Large devices (desktops, 992px and up)
-        @media (min-width: 992px) {
-        
-            .icon-card {
-                width: 300px;
+       
+          
+          
+        /* --- */
+          
+            /* Extra small devices (portrait phones, less than 576px) */
+            @media (max-width: 575px) {
+                
+                 .icon-title { font-size: 16px; }
+          
             }
-        }
 
-        // Extra large devices (large desktops, 1200px and up)
-        @media (min-width: 1200px) {
-        
-        }
+            /* Small devices (landscape phones, less than 768px) */
+            @media (max-width: 767px) {
+                
+                 .icon-title { font-size: 18px; }
+          
+            }
+
+            /* Medium devices (tablets, less than 992px) */
+            @media (max-width: 991px) { 
+                
+                 .icon-title { font-size: 22px; }
+                
+            }
+
+            /* Large devices (desktops, less than 1200px) */
+            @media (max-width: 1199px) { 
+                /* .icon-card { width: 300px; } */
+            }
       
       </style>  
       
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+      
+      
+      
   </head>
   <body>
     <div class="container">
-        <h1>John Walsted's Icons</h1>
+        <header>
+            <h1 class="text-center mb-5 mt-5">John Walsted's Icons</h1>
+        </header>
 
-        <p>The Rev. John H. Walsted (1932-2014) was a gifted artist and noted iconographer. John’s works are found in churches and private collections all over the United States and in Europe. John was a master of egg tempera painting, a technique that suspends ground mineral pigments in egg yolk. Egg tempera is the traditional medium of Orthodox iconography, and Western artists universally used egg tempera until oil became prevalent during the Renaissance.</p>
-        <p>John’s icons were written according to the canons of Russian iconography. He worked largely in the North Russian style of the 14th to 16th centuries. His Western-style paintings are mostly in the Flemish or Sienese style. John did almost exclusively religious works; his secular pieces can be numbered on one hand.</p>
-        <p>John had two goals with his art. First, he wanted to provide vehicles for the devotion of the faithful. Second, he wanted to make it possible for people to worship in the beauty of holiness.</p>
-        <p>Almost all of John’s pieces were done on commission, but at his death he left a number of pieces that had not been commissioned. John was my partner for from 1977 until his death, and I am now the steward of those pieces.</p>
-        <p>The works on this website are appropriate for churches, chapels, or private collections. The prices noted are those we would have asked if the piece had been commissioned. However, do not let the listed price discourage you. My principal purpose in creating this website is to place John’s pieces appropriately so that they can serve the goals John had in executing them — to excite devotion and to beautify spaces.</p>
-        <p>If you are interested in any of these pieces, please do not hesitate to be in touch with me at jerrykeucher@gmail.com or 347-713-2218.</p>
-        <p>Jerry Keucher</p>
-
-
-
-
-
-
+        <section>
+            <p>The Rev. John H. Walsted (1932-2014) was a gifted artist and noted iconographer. John’s works are found in churches and private collections all over the United States and in Europe. John was a master of egg tempera painting, a technique that suspends ground mineral pigments in egg yolk. Egg tempera is the traditional medium of Orthodox iconography, and Western artists universally used egg tempera until oil became prevalent during the Renaissance.</p>
+            <p>John’s icons were written according to the canons of Russian iconography. He worked largely in the North Russian style of the 14th to 16th centuries. His Western-style paintings are mostly in the Flemish or Sienese style. John did almost exclusively religious works; his secular pieces can be numbered on one hand.</p>
+            <p>John had two goals with his art. First, he wanted to provide vehicles for the devotion of the faithful. Second, he wanted to make it possible for people to worship in the beauty of holiness.</p>
+            <p>Almost all of John’s pieces were done on commission, but at his death he left a number of pieces that had not been commissioned. John was my partner for from 1977 until his death, and I am now the steward of those pieces.</p>
+            <p>The works on this website are appropriate for churches, chapels, or private collections. The prices noted are those we would have asked if the piece had been commissioned. However, do not let the listed price discourage you. My principal purpose in creating this website is to place John’s pieces appropriately so that they can serve the goals John had in executing them — to excite devotion and to beautify spaces.</p>
+            <p>If you are interested in any of these pieces, please do not hesitate to be in touch with me at <a href="mailto:jerrykeucher@gmail.com?subject=John%20Walsted%20Icons">jerrykeucher@gmail.com</a> or 347-713-2218.</p>
+            <footer class="blockquote-footer" style="font-size: 100%;">Jerry Keucher</footer>
+        </section>
 
 
-        <div class="image-gal my-gallery">
+
+
+        <h1 class="text-center mb-5 mt-5">Icon Gallery</h1>
+
+
+
+        <div class="image-gal my-gallery" id="image-gal">
 
             <div class="row">
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon1.jpg">
-                                <img src="imgs/icon1.jpg">
+                            <a data-fancybox="gallery" data-caption="Icon Painted without Hands (Ἀχειροποίητος)" href="imgs/icon1c.png">
+                                <img src="imgs/icon1c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Icon Painted without Hands (Ἀχειροποίητος)</h3>
+                            <p>15" x 19"</p>
+                            <p>$1,800</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon2.jpg">
-                                <img src="imgs/icon2.jpg">
+                            <a data-fancybox="gallery" data-caption="Andrei Rublev Transfiguration icon (with blue border)" href="imgs/icon2c.png">
+                                <img src="imgs/icon2c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Andrei Rublev Transfiguration icon (with blue border)</h3>
+                            <p>23¼" x 31"</p>
+                            <p>$4,000</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon3.jpg">
-                                <img src="imgs/icon3.jpg">
+                            <a data-fancybox="gallery" data-caption="Madonna and Child <span style='font-style:italic'>(et Verbum caro factum est)</span>" href="imgs/icon3c.png">
+                                <img src="imgs/icon3c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
-                        </div> 
-                    </div> 
-                </div> <!-- end col -->
-                
-                
-                <div class="col-6 col-md-4">
-                    <div class="icon-card">
-                        <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon4.jpg">
-                                <img src="imgs/icon4.jpg">
-                            </a>
-                        </div>
-                        <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
-                        </div> 
-                    </div> 
-                </div> <!-- end col -->
-                <div class="col-6 col-md-4">
-                    <div class="icon-card">
-                        <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon5.jpg">
-                                <img src="imgs/icon5.jpg">
-                            </a>
-                        </div>
-                        <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
-                        </div> 
-                    </div> 
-                </div> <!-- end col -->
-                <div class="col-6 col-md-4">
-                    <div class="icon-card">
-                        <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon6.jpg">
-                                <img src="imgs/icon6.jpg">
-                            </a>
-                        </div>
-                        <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Madonna and Child <span>(et Verbum caro factum est)</span></h3>
+                            <p>26½" x 36½"</p>
+                            <p>$8,000</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
@@ -178,42 +177,42 @@
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon7.jpg">
-                                <img src="imgs/icon7.jpg">
+                            <a data-fancybox="gallery" data-caption="Christ Pantokrator icon" href="imgs/icon4c.png">
+                                <img src="imgs/icon4c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Christ Pantokrator icon</h3>
+                            <p>24" x 36"</p>
+                            <p>$3,500</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon8.jpg">
-                                <img src="imgs/icon8.jpg">
+                            <a data-fancybox="gallery" data-caption="Mother of Tenderness icon" href="imgs/icon5c.png">
+                                <img src="imgs/icon5c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Mother of Tenderness icon</h3>
+                            <p>32½" x 42½"</p>
+                            <p>$4,000</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon9.jpg">
-                                <img src="imgs/icon9.jpg">
+                            <a data-fancybox="gallery" data-caption="Andrei Rublev Transfiguration icon" href="imgs/icon6c.png">
+                                <img src="imgs/icon6c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Andrei Rublev Transfiguration icon</h3>
+                            <p>31½" x41½"</p>
+                            <p>$5,000</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
@@ -222,42 +221,86 @@
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon10.jpg">
-                                <img src="imgs/icon10.jpg">
+                            <a data-fancybox="gallery" data-caption="Hodegetria Mother of God icon <span style='font-style:italic'>(pointing the way)</span> with riza" href="imgs/icon7c.png">
+                                <img src="imgs/icon7c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Hodegetria Mother of God icon <span>(pointing the way)</span> with riza</h3>
+                            <p>12½" x 14½"</p>
+                            <p>$2,500</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon11.jpg">
-                                <img src="imgs/icon11.jpg">
+                            <a data-fancybox="gallery" data-caption="Mother of Tenderness icon with opals" href="imgs/icon8c.png">
+                                <img src="imgs/icon8c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Mother of Tenderness icon with opals</h3>
+                            <p>12" x 15"</p>
+                            <p>$1,800</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon12.jpg">
-                                <img src="imgs/icon12.jpg">
+                            <a data-fancybox="gallery" data-caption="Madonna and Child with angels" href="imgs/icon9c.png">
+                                <img src="imgs/icon9c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Madonna and Child with angels</h3>
+                            <p>17" x 24"</p>
+                            <p>$2,500</p>
+                        </div> 
+                    </div> 
+                </div> <!-- end col -->
+                
+                
+                <div class="col-6 col-md-4">
+                    <div class="icon-card">
+                        <div class="icon-card-img-container">
+                            <a data-fancybox="gallery" data-caption="St. George and the Dragon icon" href="imgs/icon10c.png">
+                                <img src="imgs/icon10c_s.png">
+                            </a>
+                        </div>
+                        <div class="icon-card-text-container">
+                            <h3 class="icon-title">St. George and the Dragon icon</h3>
+                            <p>17" x 24"</p>
+                            <p>$2,500</p>
+                        </div> 
+                    </div> 
+                </div> <!-- end col -->
+                <div class="col-6 col-md-4">
+                    <div class="icon-card">
+                        <div class="icon-card-img-container">
+                            <a data-fancybox="gallery" data-caption="St. Nicholas icon" href="imgs/icon11c.png">
+                                <img src="imgs/icon11c_s.png">
+                            </a>
+                        </div>
+                        <div class="icon-card-text-container">
+                            <h3 class="icon-title">St. Nicholas icon</h3>
+                            <p>11" x 14"</p>
+                            <p>$1,500</p>
+                        </div> 
+                    </div> 
+                </div> <!-- end col -->
+                <div class="col-6 col-md-4">
+                    <div class="icon-card">
+                        <div class="icon-card-img-container">
+                            <a data-fancybox="gallery" data-caption="St. Catherine of Alexandria icon" href="imgs/icon12c.png">
+                                <img src="imgs/icon12c_s.png">
+                            </a>
+                        </div>
+                        <div class="icon-card-text-container">
+                            <h3 class="icon-title">St. Catherine of Alexandria icon</h3>
+                            <p>18" x 24"</p>
+                            <p>$1,800</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
@@ -265,28 +308,28 @@
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon13.jpg">
-                                <img src="imgs/icon13.jpg">
+                            <a data-fancybox="gallery" data-caption="Hodegetria Mother of God icon (with case) <span style='font-style:italic'>(16th century Macedonian)</span>" href="imgs/icon13c.png">
+                                <img src="imgs/icon13c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Hodegetria Mother of God icon (with case) <span>(16th century Macedonian)</span></h3>
+                            <p>16½" x 20"</p>
+                            <p>$2,000</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
                 <div class="col-6 col-md-4">
                     <div class="icon-card">
                         <div class="icon-card-img-container">
-                            <a data-fancybox="gallery" data-caption="Lovely Icon" href="imgs/icon14.jpg">
-                                <img src="imgs/icon14.jpg">
+                            <a data-fancybox="gallery" data-caption="Madonna and Child (Regina coeli)" href="imgs/icon14c.png">
+                                <img src="imgs/icon14c_s.png">
                             </a>
                         </div>
                         <div class="icon-card-text-container">
-                            <h3>Title</h3>
-                            <p>Measurement</p>
-                            <p>Price</p>
+                            <h3 class="icon-title">Madonna and Child (Regina coeli)</h3>
+                            <p>28" x 32"</p>
+                            <p>$6,500</p>
                         </div> 
                     </div> 
                 </div> <!-- end col -->
@@ -296,6 +339,12 @@
             
             <hr>
             <br>
+            
+            <footer>
+            
+                <p class="text-center">If you are interested in any of these pieces, please do not hesitate to be in touch with me at <a href="mailto:jerrykeucher@gmail.com?subject=John%20Walsted%20Icons">jerrykeucher@gmail.com</a> or 347-713-2218.</p>
+            
+            </footer>
             
             
             
