@@ -67,36 +67,80 @@
             max-width: 400px;
         }
         
+          
+        /* image containers within opening text */
+        .img-text-container1 {
+            float: right;
+            display: inline-block;
+            width: 320px;
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+          
+        .img-text-container2 {
+            float: left;
+            display: inline-block;
+            width: 320px;
+            margin-right: 15px;
+            margin-bottom: 15px;
+          }
+          
+          .img-text-container1 img, 
+          .img-text-container2 img {
+              
+              width: 100%;
+          }
+          
+          .img-text-container1 span,
+          .img-text-container2 span {
+            display: block;
+            margin-top: 2px;
+            color: #868e96;
+            font-style: italic;
+            font-size: 15px;
+        }
        
           
           
         /* --- */
+          /* Large devices (desktops, less than 1200px) */
+            @media (max-width: 1199px) { 
+                /* .icon-card { width: 300px; } */
+                .img-text-container1, .img-text-container2 {
+                    width: 220px;
+                }
+            }
+          
+            /* Medium devices (tablets, less than 992px) */
+            @media (max-width: 991px) { 
+                
+                .icon-title { font-size: 22px; }
+                
+                .img-text-container1, .img-text-container2 {
+                    width: 190px;
+                }
+          
+                
+            }
+          
+            /* Small devices (landscape phones, less than 768px) */
+            @media (max-width: 767px) {
+                
+                 .icon-title { font-size: 18px; }
+                .img-text-container1, .img-text-container2 {
+                    width: 120px;
+                }
+          
+            }
           
             /* Extra small devices (portrait phones, less than 576px) */
             @media (max-width: 575px) {
                 
                  .icon-title { font-size: 16px; }
-          
+            
             }
 
-            /* Small devices (landscape phones, less than 768px) */
-            @media (max-width: 767px) {
-                
-                 .icon-title { font-size: 18px; }
-          
-            }
-
-            /* Medium devices (tablets, less than 992px) */
-            @media (max-width: 991px) { 
-                
-                 .icon-title { font-size: 22px; }
-                
-            }
-
-            /* Large devices (desktops, less than 1200px) */
-            @media (max-width: 1199px) { 
-                /* .icon-card { width: 300px; } */
-            }
+            
       
       </style>  
       
@@ -106,17 +150,26 @@
   </head>
   <body>
     <div class="container">
-        <header>
-            <h1 class="text-center mb-5 mt-5">John Walsted's Icons</h1>
+        <header style="text-align: center;">
+            <img class="text-center mb-5 mt-4 img-fluid" src="imgs/assets/logo.png"/ alt="John Walsted Iconography">
+            <!-- <h1 class="text-center mb-5 mt-5">John Walsted's Icons</h1> -->
         </header>
 
-        <section>
-            <p>The Rev. John H. Walsted (1932-2014) was a gifted artist and noted iconographer. John’s works are found in churches and private collections all over the United States and in Europe. John was a master of egg tempera painting, a technique that suspends ground mineral pigments in egg yolk. Egg tempera is the traditional medium of Orthodox iconography, and Western artists universally used egg tempera until oil became prevalent during the Renaissance.</p>
+        <section class="col-12">
+            <div class="img-text-container1">
+                <img src="/imgs/assets/walsted2.jpg" alt="John Walsted">
+                <span>John Walsted at work</span>
+            </div>
+             <p>The Rev. John H. Walsted (1932-2014) was a gifted artist and noted iconographer. John’s works are found in churches and private collections all over the United States and in Europe. John was a master of egg tempera painting, a technique that suspends ground mineral pigments in egg yolk. Egg tempera is the traditional medium of Orthodox iconography, and Western artists universally used egg tempera until oil became prevalent during the Renaissance.</p>
             <p>John’s icons were written according to the canons of Russian iconography. He worked largely in the North Russian style of the 14th to 16th centuries. His Western-style paintings are mostly in the Flemish or Sienese style. John did almost exclusively religious works; his secular pieces can be numbered on one hand.</p>
+            <div class="img-text-container2">
+                <img src="/imgs/assets/walsted.jpg" class="float-left img-fluid img2" alt="John Walsted">
+                <span>John Walsted at work</span>
+            </div>
             <p>John had two goals with his art. First, he wanted to provide vehicles for the devotion of the faithful. Second, he wanted to make it possible for people to worship in the beauty of holiness.</p>
             <p>Almost all of John’s pieces were done on commission, but at his death he left a number of pieces that had not been commissioned. John was my partner for from 1977 until his death, and I am now the steward of those pieces.</p>
             <p>The works on this website are appropriate for churches, chapels, or private collections. The prices noted are those we would have asked if the piece had been commissioned. However, do not let the listed price discourage you. My principal purpose in creating this website is to place John’s pieces appropriately so that they can serve the goals John had in executing them — to excite devotion and to beautify spaces.</p>
-            <p>If you are interested in any of these pieces, please do not hesitate to be in touch with me at <a href="mailto:jerrykeucher@gmail.com?subject=John%20Walsted%20Icons">jerrykeucher@gmail.com</a> or 347-713-2218.</p>
+            <p style="clear:both;">If you are interested in any of these pieces, please do not hesitate to be in touch with me at <a href="mailto:jerrykeucher@gmail.com?subject=John%20Walsted%20Icons">jerrykeucher@gmail.com</a> or 347-713-2218.</p>
             <footer class="blockquote-footer" style="font-size: 100%;">Jerry Keucher</footer>
         </section>
 
